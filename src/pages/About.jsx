@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/image54.png'
+import image from '/image54.png'
 import { Link } from 'react-router-dom'
 
 function About() {
