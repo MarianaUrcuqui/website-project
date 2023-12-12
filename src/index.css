@@ -83,7 +83,7 @@ body{
 /* ------ home ------- */
 
 .home-div{
-  background-image: url('./website-project/src/images/post02.jpg');
+  background-image: url('/post02.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
