@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function About() {
   return (
     <>
-      <img src='/image54.png' alt='van' className='about-img'/>
+      <img src='./images/image54.png' alt='van' className='about-img'/>
       <div className='about-div'>
         <div>
           <h1 className='about-title'>Don’t squeeze in a sedan when you could relax in a car.</h1>
@@ -20,5 +20,4 @@ function About() {
     </>
   )
 }
-
 export default About
