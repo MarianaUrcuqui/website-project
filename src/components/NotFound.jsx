@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <div className='error-div'>
       <h2>Sorry, but we couldn't load the information.</h2>
-      <Link to='/' className='error-link'>Return to home</Link>
+      <Link to='/website-project/' className='error-link'>Return to home</Link>
     </div>)
 }
 

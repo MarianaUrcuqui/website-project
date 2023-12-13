@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom'
 function Header() {
   return (
     <div className='header-div'>
-      <Link className='header-title' to='/website-project'>#CARLIFE</Link>
+      <Link className='header-title' to='/website-project/'>#CARLIFE</Link>
       <nav className='nav'>
         <NavLink 
           to='host'
