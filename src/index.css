@@ -19,7 +19,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f2e8ff;
+  background-color: #e6e6e6;
   height: 5rem;
 }
 
@@ -103,7 +103,7 @@ body{
 }
 
 .home-paragraph{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .home-link{
@@ -115,6 +115,7 @@ body{
   font-weight: 600;
   color: #000;
   border-radius: 5px;
+  color: #37005f;
 }
 
 .home-link:active,
