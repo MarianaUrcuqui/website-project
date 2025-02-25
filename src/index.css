@@ -19,7 +19,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFF7ED;
+  background-color: #fff7ed00;
   height: 7rem;
 }
 
@@ -28,11 +28,11 @@ body{
   font-weight: 900;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #000;
+  color: #37005f;
 }
 
 .nav > a{
-  color: #4D4D4D;
+  color: #a172ca;
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
@@ -98,20 +98,24 @@ body{
   margin: 0;
 }
 
+.home-title{
+  font-size: 20rem;
+}
+
 .home-link{
   background-color: #ffeddf;
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 2em;
   text-decoration: none;
   font-weight: 600;
   color: #000;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .home-link:active,
 .home-link:focus{
-  background-color: #ef8335;
+  background-color: #edd7ff;
 }
 
 /* ------ about -------- */
