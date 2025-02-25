@@ -7,7 +7,7 @@ function Header() {
       <Link className='header-title' to='/website-project/'>Mariana Urcuqui</Link>
       <nav className='nav'>
         <NavLink 
-          to='/website-priject/'
+          to='/website-project/'
           style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
         >Home</NavLink>
       <NavLink
