@@ -4,20 +4,24 @@ import { NavLink, Link } from 'react-router-dom'
 function Header() {
   return (
     <div className='header-div'>
-      <Link className='header-title' to='/website-project/'>#CARLIFE</Link>
+      <Link className='header-title' to='/website-project/'>Mariana Urcuqui</Link>
       <nav className='nav'>
         <NavLink 
-          to='host'
+          to='/website-priject/'
           style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-        >Host</NavLink>
+        >Home</NavLink>
       <NavLink
         to='about'
         style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-      >About</NavLink>
+      >About me</NavLink>
       <NavLink 
         to='cars'
         style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-      >Cars</NavLink>
+      >Projects</NavLink>
+      <NavLink 
+        to='Contact'
+        style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
+      >Contact</NavLink>
       </nav>
     </div>
   )
