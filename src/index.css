@@ -99,14 +99,14 @@ body{
 }
 
 .home-link{
-  background-color: #FF8C38;
+  background-color: #ffeddf;
   display: flex;
   justify-content: center;
   padding: 1em;
   text-decoration: none;
   font-weight: 600;
   color: #000;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .home-link:active,
