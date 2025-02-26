@@ -5,7 +5,7 @@ function Footer() {
   const year = date.getFullYear()
   return (
     <div className='footer-div'>
-      <p className='footer-title'>Ⓒ {year} #CARLIFE</p>
+      <p className='footer-title'>✉️ Marianaurcuquig@gmail.com</p>
     </div>
   )
 }

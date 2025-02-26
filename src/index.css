@@ -90,8 +90,8 @@ body{
   gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   min-height: 70vh;
 }
 
@@ -120,9 +120,8 @@ body{
   border-radius: 5px;
 }
 
-.home-link:active,
-.home-link:focus{
-  background-color: #37005f;
+.home-link:active,.home-link:focus {
+  background-color: e6e6e6;
 }
 
 /* ------ about -------- */
@@ -327,10 +326,10 @@ body{
     color: whitesmoke;
   }
 
-  .home-link{
-    color:#fff;
-    width: 30%;
-  }
+  .home-link {
+    color: #37005f;
+    width: 30%
+}
 
   .about-subdiv{
     width: 50%;
