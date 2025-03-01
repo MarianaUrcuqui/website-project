@@ -3,9 +3,12 @@ import Home from './pages/Home'
 import Layout from './components/Layout'
 import Cars from './pages/Cars'
 import About from './pages/About'
-import LayoutHost from './components/LayoutHost'
+import LayoutProjects from './components/LayoutProjects'
 import Dashboard from './pages/Dashboard'
 import HostCars from './pages/HostCars'
+import Project01 from './pages/Project01'
+import Project02 from './pages/Project02'
+import Project03 from './pages/Project03'
 
 
 function App() {
@@ -16,10 +19,10 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path='about' element={<About />}/>
-          <Route path='cars' element={<Cars />}/>
-          <Route path='host' element={<LayoutHost />}>
-            <Route index element={<Dashboard />} />
-            <Route  path='cars' element={<HostCars />}/>
+          <Route path='projects' element={<LayoutProjects />}>
+            <Route index element={<Project01 />} />
+            <Route  path='project02' element={<Project02 />}/>
+            <Route  path='project03' element={<Project03 />}/>
           </Route>
         </Route>
       </Routes>

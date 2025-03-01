@@ -2,40 +2,55 @@ body{
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: #FFF7ED;
 }
 
 #root{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(45deg, rgba(149,6,191,1) 0%, rgba(87,10,187,1) 45%, rgba(0,52,218,1) 100%);}
+
+p{
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.container{
+  min-height: 75vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  color: #e6e6e6;
 }
 
 /* -------------------- */
 /* ------ header ------ */
 /* -------------------- */
 
-.header-div{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #e6e6e6;
-  height: 5rem;
-}
-
 .header-title{
   margin-left: 1.5rem;
   font-weight: 900;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #37005f;
+  color: #e6e6e6;
 }
 
+.header-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+
 .nav > a{
-  color: #37005f;
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
+  color: #e6e6e6;
 }
 
 .nav > a:last-of-type{
@@ -54,10 +69,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
-  height: 4.67175rem;
+  margin-top: 0;
+  height: 4rem;
   background-color: #252525;
   color: #AAA;
+}
+
+.footer-title{
+  font-size: 0.8rem;
 }
 
 /* -------------------- */
@@ -82,38 +101,28 @@ body{
 
 /* ------ home ------- */
 
-.home-div {
-  background-image: url(/website-project/images/bg.jpeg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem 25rem;
-  min-height: 70vh
-}
-
 .home-title, 
 .home-paragraph,
 .home-link{
   margin: 0;
 }
 
-.home-title{
-  font-size: 2.5rem;
-}
-
 .home-paragraph{
   font-size: 1.2rem;
 }
 
+.home-title{
+  font-size: 2.5rem;
+}
+
 .home-link{
-  background-color: #ffeddf;
+  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
   padding: 2em;
   text-decoration: none;
   font-weight: 600;
-  color: #000;
+  color: #37005f;
   border-radius: 5px;
 }
 
@@ -123,54 +132,105 @@ body{
 
 /* ------ about -------- */
 
-.about-div, .about-subdiv{
-  padding: 1.8rem;
+.about-first-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  padding-top: 0;
+  color:#e6e6e6
 }
 
-.about-img{
-  max-height: 40vh;
-  width: 100%;
+.about-div{
+  padding: 0 1.8rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  color: #e6e6e6;
+}
+
+.about-subdiv{
+  display: flex;  
+  flex-direction: column;
+}
+
+.about-img {
+  max-height: 25vh;
   object-fit: cover;
+  border-radius: 50%;
+  padding: 1rem;
+  align-self: center;
+  width: 25vh;
+  border-style: dashed;
 }
 
 .about-title{
   font-weight: 600;
   margin: 0 0 .2rem 0;
+  font-size: 2.5rem;
 }
 
-.about-subdiv{
-  background-color: #FFCC8D;
-  border-radius: 5px;
-}
-
-.about-link{
-  text-decoration: none;
-  padding: 1rem 1.5rem;
-  background-color: #000;
-  color: whitesmoke;
+.about-subtitle{
+  font-size: 1.5rem;
   font-weight: 600;
-  border-radius: 10px;
-  display: inline-block;
-  margin: 1rem 0 .5rem 0;
+  margin-bottom: 0.5rem;
 }
 
-.about-paragraph{
-  line-height: 1.4rem;
-  font-weight: 500;
+.about-first-paragraph {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .about-paragraph:last-of-type{
-  margin-bottom: 3.3rem;
+  margin-bottom: 5rem;
 }
 
-.about-paragraph:not(:last-of-type){
-  margin-top: 2rem;
+.skills-div{
+  display: flex;
+  gap: 1em 1em;
+  flex-flow: wrap;
+  padding-bottom: 2rem;
 }
 
-.about-span{
-  display: block;
+.skill {
+  background-color: #cbc0df;
+  color: #37005f;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-weight: 400;
 }
 
+/* ----------- Projects -----------*/
+
+.proj-title,
+.proj-subtitle,
+.proj-paragraph,
+.img-caption{
+  margin: 0;
+}
+
+.proj-title,
+.proj-subtitle{
+  font-weight: 400;
+}
+
+.proj-imgs-div{
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem 2rem;
+}
+
+.img-caption{
+  font-size: 0.8rem;
+}
+
+.proj-img{
+  border-radius: 5px;
+  max-width: 80vw;
+}
 /* --------- cars ---------- */
 
 .cars-big-div{
@@ -237,7 +297,7 @@ body{
 }
 
 /* -------- host -------- */
-.host-nav-div,
+.projects-nav-div,
 .dashboard-welcome,
 .review-div,
 .dashboard-cars{
@@ -320,7 +380,7 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    padding: 2rem 25rem;
   }
 
   .home-link {
@@ -329,8 +389,13 @@ body{
 }
 
   .about-subdiv{
-    width: 50%;
+    max-width: 40vw;
   } 
+
+  .about-div{
+    flex-direction: row;
+    gap: 7rem;
+  }
 
   .dashboard-div{
     background-color: #FFEAD0;

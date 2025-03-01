@@ -1,22 +1,26 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function HostNav() {
+function ProjectsNav() {
   return (
-    <div className='host-nav-div'>
+    <div className='projects-nav-div'>
     <nav className='nav'>
     <NavLink
       to='.'
       end
       style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-    >Dashboard</NavLink>
+    >Project 1</NavLink>
     <NavLink 
-      to='cars'
+      to='project02'
       style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-    >Cars</NavLink>
+    >Project 2</NavLink>
+    <NavLink 
+      to='project03'
+      style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
+    >Project 3</NavLink>
     </nav>
   </div>
   )
 }
 
-export default HostNav
+export default ProjectsNav

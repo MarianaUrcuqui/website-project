@@ -2,26 +2,22 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 function Header() {
+  /*const path = useLocation().pathname;
+  const location = path.split("/")[2]; */
   return (
     <div className='header-div'>
-      <Link className='header-title' to='/website-project/'>Mariana Urcuqui</Link>
+      <NavLink 
+      to='/website-project'
+      className='header-title'>Mariana Urcuqui</NavLink>
       <nav className='nav'>
-        <NavLink 
-          to='/website-project/'
-          style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-        >Home</NavLink>
       <NavLink
         to='about'
         style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
       >About me</NavLink>
       <NavLink 
-        to='cars'
+        to='projects'
         style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
       >Projects</NavLink>
-      <NavLink 
-        to='Contact'
-        style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-      >Contact</NavLink>
       </nav>
     </div>
   )
