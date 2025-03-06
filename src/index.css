@@ -8,11 +8,13 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(45deg, rgba(149,6,191,1) 0%, rgba(87,10,187,1) 45%, rgba(0,52,218,1) 100%);}
-
+  background-color: #1a1a1a;
+  color: #ecf3f9;
+  }
 p{
   font-size: 1rem;
   font-weight: 200;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container{
@@ -21,7 +23,11 @@ p{
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  color: #e6e6e6;
+}
+
+@font-face {
+  font-family: 'crostan';
+  src: url('/Crostan/Crostan/OpenType-TT/Crostan-SemiBold.ttf');
 }
 
 /* -------------------- */
@@ -30,10 +36,10 @@ p{
 
 .header-title{
   margin-left: 1.5rem;
-  font-weight: 900;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #e6e6e6;
+  color: #ecf3f9;
+  font-family: crostan;
 }
 
 .header-div{
@@ -41,7 +47,7 @@ p{
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -49,7 +55,8 @@ p{
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
-  color: #e6e6e6;
+  color: #ecf3f9;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .nav > a:last-of-type{
@@ -117,22 +124,23 @@ p{
 
 .home-title{
   font-size: 2.5rem;
+  font-family: crostan;
 }
 
 .home-link{
-  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
   padding: 2em;
   text-decoration: none;
   font-weight: 600;
-  color: #37005f;
+  color: #1a1a1a;
   border-radius: 5px;
   margin-top: 1rem;
+  background-color: #ecf3f9;
 }
 
 .home-link:active,.home-link:focus {
-  background-color: e6e6e6;
+  background-color: #e6e6e6;
 }
 
 /* ------ about -------- */
@@ -144,7 +152,6 @@ p{
   flex-direction: column;
   padding: 0 2rem;
   padding-top: 0;
-  color:#e6e6e6;
   margin-bottom: 1rem;
 }
 
@@ -153,7 +160,6 @@ p{
   display: flex;
   flex-direction: column;
   column-gap: 2rem;
-  color: #e6e6e6;
 }
 
 .about-subdiv{
@@ -205,12 +211,20 @@ p{
 }
 
 .skill {
+  /* --------------------------------------------------------------*/
   background-color: #cbc0df;
   color: #37005f;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 0;
   font-weight: 400;
+}
+
+/* ------------ Projects Preview -------*/
+
+.proj-preview-vid{
+  width: 25%;
+  height: 40%;
 }
 
 /* ----------- Projects -----------*/
@@ -270,71 +284,6 @@ h2.proj-subtitle{
 .proj-img{
   border-radius: 5px;
   max-width: 80vw;
-}
-
-/* --------- cars ---------- */
-
-.cars-big-div{
-  padding: 2rem;
-}
-
-.cars-div{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  align-items: center;  
-  gap: 2rem;
-}
-
-.car-make,
-.car-price,
-.car-title,
-.cars-big-div > h1{
-  font-weight: 500;
-}
-
-.car-price > span{
-  font-weight: 300;
-  display: block;
-}
-
-.car-title{
-  margin-bottom: 0.5rem;
-}
-
-.car-div{
-  display: grid;
-  grid-template: repeat(3, auto) / auto min-content;
-  color: #000;
-}
-
-.car-img{
-  grid-row: 1;
-  grid-column: 1 / -1;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.car-price{
-  margin-left: auto;
-  margin-bottom: 0;
-  grid-row: 2 /-1;
-  grid-column: 2;
-}
-
-.car-make{
-  margin: 0;
-}
-
-#make-filter{
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  padding: .5rem;
-  border: 2px solid #ffd298;
-  background-color: #FFF7ED;
-  width: 40%;
-  max-width: 250px;
 }
 
 /* -------- host -------- */
@@ -425,7 +374,6 @@ h2.proj-subtitle{
   }
 
   .home-link {
-    color: #37005f;
     width: 30%
 }
 

@@ -3,11 +3,20 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <div className='home-div container'>
-      <h1 className='home-title'>Hey, I'm Mariana Urcuqui</h1>
-      <p className='home-paragraph'>And I made this website from scratch to show you my projects and how excited I am to dive into the world of game development</p>
-      <Link to='projects' className='home-link' >My work</Link>
-    </div>
+    <>   
+      <div className='home-div container'>
+        <h1 className='home-title'>Hey, I'm Mariana Urcuqui</h1>
+        <p className='home-paragraph'>And I made this website from scratch to show you my projects and how excited I am to dive into the world of game development</p>
+        <Link to='projects' className='home-link' >My work</Link>
+      </div>
+      <div className='projects-div'>
+        <div className='project-preview'>
+          <video autoPlay muted className='proj-preview-vid'>
+            <source src='videos/proj01.mp4' type='video/mp4'></source>
+          </video>
+        </div>
+      </div>
+    </>
   )
 }
 
