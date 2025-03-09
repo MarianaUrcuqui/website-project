@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   /*const path = useLocation().pathname;
@@ -14,10 +14,6 @@ function Header() {
         to='about'
         style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
       >About me</NavLink>
-      <NavLink 
-        to='projects'
-        style={({ isActive }) => isActive ?   {textDecoration: 'underline'} : null}
-      >Projects</NavLink>
       </nav>
     </div>
   )
