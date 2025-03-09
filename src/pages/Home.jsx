@@ -21,7 +21,6 @@ function Home() {
             </video>
             <h3>To the Sea - videogame</h3>
             <p><span>Role: </span>gameplay programmer, artist, animator, game designer <br/>
-                <span>Team size:</span> 1 <br/>
                 <span>Time frame: </span>5 months <br/>
                 <span>Engine: </span>Unity (C#)</p>
           </section>
@@ -34,7 +33,6 @@ function Home() {
             </video>
             <h3>The Coder Path - Game Concept</h3>
             <p><span>Role: </span>game designer, gameplay programmer<br/>
-                <span>Team size:</span>1<br/>
                 <span>Time frame: </span>1 month<br/>
                 <span>Engine: </span>Godot (GDScript)</p>
           </section>
@@ -47,7 +45,6 @@ function Home() {
             </video>
             <h3>3D Shooter - Prototype</h3>
             <p><span>Role: </span>gameplay programmer<br/>
-                <span>Team size:</span> 1 <br/>
                 <span>Time frame: </span>3 weeks<br/>
                 <span>Engine: </span>Unity (C#)</p>
           </section>
