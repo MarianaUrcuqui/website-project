@@ -22,25 +22,17 @@ function Project01(){
         <li><h4>Integration and testing: </h4>Implemented animations with Animator Controller and sprite sheets, and fixed bugs for a polished experience</li>
       </ol>
       <h2 className="proj-subtitle">Key Mechanics</h2>
+      <h4>Player Behavior and combat</h4>
       <div className="proj01-container">
         <div>
-          <h4>Player Behavior and combat</h4>
           <ul>
             <li>Used a boolean variable to track when the player is engaged in combat, altering movement behavior accordingly</li>
             <li>Implemented a special attack that became available only during boss fights</li>
           </ul>
         </div>
-        <div className="proj-img-container">
-          <img className="proj-img proj01-img" src="images/bossDirection.png" 
-          alt="image of the enemy AI code" ></img>
-        </div>
       </div>
       <h4>Boss AI and Attack system</h4>
       <div className="proj01-container">
-        <div className="proj-img-container">
-          <img className="proj-img" src="images/ifFighting.png" 
-          alt="image of the code that changes the player movement from running to still, and enables a new attack" ></img>
-        </div>
         <div>
           <ul>
             <li>Used Physics.Raycast to find the player's position relative to the boss (IsPlayerOnRightSide), adjusting enemy movement dynamically</li>
@@ -54,10 +46,6 @@ function Project01(){
         <ul>
           <li>Implemented dynamic collision toggling: The IsTrigger property changes to false when the player jumps high enough to touch the roof with his feet</li>
         </ul>
-        <div className="proj-img-container">
-          <img className="proj-img proj01-img" src="images/roofCollider.png" 
-          alt="Platforming system code" ></img>
-        </div>
       </div>
       <h4>Flying Enemy Behavior</h4>
       <div className="proj01-container">

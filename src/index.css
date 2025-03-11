@@ -28,6 +28,7 @@ li{
 
 h4{
   font-size: 1.3rem;
+  margin-bottom: 0.7rem;
 }
 
 .container{
@@ -301,6 +302,7 @@ h4{
 
 .img{
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .proj03-container{
@@ -441,7 +443,7 @@ ol > li > h4{
   }
 
   .proj03-img{
-    max-width: 33vw;
+    max-width: 50vw;
   }
 
 }
