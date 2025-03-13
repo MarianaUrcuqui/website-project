@@ -51,7 +51,7 @@ function Project03(){
         <div className="proj03-container">
             <div>
               <ul>
-                <li>Implemented a field of view that detects and reacts when the player is seen.</li>
+                <li>Implemented a field of view that detects and reacts when the player is seen. It uses a Physics.OverlapSphere to detect objects within a specified radius around the enemy.</li>
                 <li>Utilized a IEnumerator Coroutine for the field of view check instead of the Update function to improve performance</li>
                 <li>Incorporated a damage system that responses according to the weapon used to shoot</li>  
                 <li>Implemented a timer and alarm sound that appear when the enemy sees the player, adding tension. If the timer reaches zero the level is over</li>

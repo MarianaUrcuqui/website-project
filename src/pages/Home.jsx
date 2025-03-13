@@ -20,7 +20,7 @@ function Home() {
               Your browser does not support html5 videos
             </video>
             <h3>To the Sea - videogame</h3>
-            <p><span>Approach: </span>gameplay programmer, artist, animator, game designer <br/>
+            <p><span>Focus: </span>gameplay programming, art design, animation, game design<br/>
                 <span>Time frame: </span>5 months <br/>
                 <span>Engine: </span>Unity (C#)</p>
           </section>
@@ -32,7 +32,7 @@ function Home() {
               Your browser does not support html5 videos
             </video>
             <h3>The Coder Path - Game Concept</h3>
-            <p><span>Approach: </span>game designer, gameplay programmer<br/>
+            <p><span>Focus: </span>game design, gameplay programming<br/>
                 <span>Time frame: </span>1 month<br/>
                 <span>Engine: </span>Godot (GDScript)</p>
           </section>
@@ -44,7 +44,7 @@ function Home() {
               Your browser does not support html5 videos
             </video>
             <h3>3D Shooter - Prototype</h3>
-            <p><span>Approach: </span>gameplay programmer<br/>
+            <p><span>Focus: </span>gameplay programming<br/>
                 <span>Time frame: </span>3 weeks<br/>
                 <span>Engine: </span>Unity (C#)</p>
           </section>
